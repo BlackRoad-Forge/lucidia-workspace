@@ -1,14 +1,16 @@
 {
-  "name": "pixelhq",
-  "version": "1.0.1",
-  "description": "Bridge server that watches Claude Code files and broadcasts events via WebSocket",
+  "name": "lucidia-workspace",
+  "version": "1.0.0",
+  "description": "Real-time visualization of BlackRoad OS Agent Workspace (Extended from PixelHQ)",
   "type": "module",
   "main": "dist/src/index.js",
   "bin": {
+    "lucidia-workspace": "dist/bin/cli.js",
     "pixelhq": "dist/bin/cli.js"
   },
   "files": [
     "dist/",
+    "assets/",
     "LICENSE",
     "README.md"
   ],
@@ -24,23 +26,31 @@
     "prepublishOnly": "npm run build && npm test"
   },
   "keywords": [
+    "blackroad",
+    "lucidia",
+    "agents",
+    "pixel-art",
+    "visualization",
     "claude-code",
     "websocket",
     "pixel-office",
-    "pixelhq"
+    "pixelhq",
+    "nats",
+    "multi-agent"
   ],
-  "author": "waynedev9598",
+  "author": "BlackRoad OS (Extended from PixelHQ by waynedev9598)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/waynedev9598/pixelhq-bridge.git"
+    "url": "git+https://github.com/blackboxprogramming/lucidia-workspace.git"
   },
-  "homepage": "https://github.com/waynedev9598/pixelhq-bridge#readme",
-  "bugs": "https://github.com/waynedev9598/pixelhq-bridge/issues",
+  "homepage": "https://github.com/blackboxprogramming/lucidia-workspace#readme",
+  "bugs": "https://github.com/blackboxprogramming/lucidia-workspace/issues",
   "dependencies": {
     "@inquirer/prompts": "^8.2.0",
     "bonjour-service": "^1.2.1",
     "chokidar": "^3.6.0",
+    "nats": "^2.29.3",
     "uuid": "^9.0.1",
     "ws": "^8.16.0"
   },

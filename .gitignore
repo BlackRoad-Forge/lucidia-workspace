@@ -1,22 +1,28 @@
 # Dependencies
 node_modules/
+package-lock.json
 
 # Build output
 dist/
 
 # Environment
 .env
-.env.*
-
-# macOS
-.DS_Store
+.env.local
 
 # IDE
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# npm
-*.tgz
+# OS
+.DS_Store
+Thumbs.db
 
-# Auth tokens (generated at runtime)
-pixel-office-auth.json
+# Testing
+coverage/
+*.test.js
+
+# Logs
+*.log
+npm-debug.log*
