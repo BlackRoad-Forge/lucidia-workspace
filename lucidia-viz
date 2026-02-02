@@ -1,0 +1,4 @@
+#!/bin/bash
+# Lucidia Workspace - Terminal Visualization
+cd ~/blackroad/lucidia-workspace
+node terminal-viz.js
